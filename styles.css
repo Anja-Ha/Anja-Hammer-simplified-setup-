@@ -1,0 +1,40 @@
+:root {
+    /*color*/
+    --color-black:#000000;
+    --color-primary1:#4B4848;
+    --color-primary2:#818181;
+    --colorcolor-primary3:#D3D3D3;
+    --color-white:#FFFFFF;
+    --color-secondary1: #E9BE5C;
+    --color-secondary2:#FFDD65;
+    --color-secondary3:#FFEAA1;
+
+    /*units*/
+    --unit-xs:8px;
+    --unit-s:16px;
+    --unit-m:32px;
+    --unit-l:64px;
+    --unit-xl:128px;
+
+    /*font*/
+    --font-size-h1:36pt; 
+    --font-size-h2:24pt;
+    --font-size-h3:18pt;
+    
+    --font-reg: "open sans"
+    
+
+}
+
+
+}
+body {color: var(--color-secondary3);
+}
+
+h1 {color: var(--color-primary1);
+}
+
+header {
+    position: right;
+    margin-left: var(--unit-l);
+}
