@@ -36,5 +36,9 @@ h1 {
 }
 
 h2 {
-    color: var(--color-secondary1);
+    color: var(--color-black);
+}
+
+body {
+    background-color: var(--color-secondary1);
 }
