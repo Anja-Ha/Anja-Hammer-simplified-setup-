@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
 :root {
     /*color*/
     --color-black:#000000;
@@ -21,24 +23,25 @@
     --font-size-h2:24pt;
     --font-size-h3:18pt;
     
-    --font-reg: "open sans"
+    --font-family: "open sans"
 }
 
 
 
 header {
     color: var(--color-secondary3);
+    
 }
 
 h1 {
     color: var(--color-primary2);
-    margin-left: var(--unit-l);
+    margin-left: var(--unit-xs);
 }
 
 h2 {
-    color: var(--color-black);
+    color: var(--color-secondary1);
 }
 
 body {
-    background-color: var(--color-secondary1);
+    background-color: var(--color-white);
 }
