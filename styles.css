@@ -124,9 +124,8 @@ h2 {
 
 .photo {
     height: 350px;
-    float:right;
+    float: right;
     padding: var(--unit-m);
-
 }
 
 
@@ -156,7 +155,7 @@ h2 {
     top: 0;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     overflow: hidden;
     transition: 0.5s ease;
 }
@@ -203,13 +202,11 @@ h2 {
 }
 
 
-
 .img-1 {
     grid-area: img-1;
     min-height: 616px;
     background-image: url("images/img-1.JPG");
 }
-
 
 .img-2 {
     grid-area: img-2;
@@ -258,41 +255,14 @@ h2 {
     background-image: url("images/img-10.JPG");
 }
 
-/*@media screen and (max-width: 900px) {
-    .image-gallery{
-        grid-template-areas: 
-                'img-1 img-1 img-2 img-2'
-                'img-1 img-1 img-3 img-3'
-                'img-4 img-4 img-3 img-3'
-                'img-5 img-5 img-6 img-6'
-                'img-7 img-7 img-6 img-6';
-    }
-    .image-gallery a {
-        height: 200px;
-    }
-
-    .img-1 {
-        min-height: 416px;
-    }
-
-    .img-3 {
-        min-height: 416px;
-    }
-
-    .img-5 {
-        min-height: 200px;
-    }
-
-    .img-6 {
-        min-height: 416px;
-    }*/
-
 .contact {
     font-size: larger;
     font-weight:500;
     margin-bottom: var(--unit-l);
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
     align-items: center;
     padding: var(--unit-m);
     background-color: var(--color-secondary3);
@@ -303,19 +273,17 @@ h2 {
     background-color: var(--color-white);
     padding: var(--unit-l);
     margin: auto;
-    border-radius: 10px;
+    border-radius:var(--unit-xs);
     position: relative;
-    
 }
 
 .contact-us {
     width: 400px;
     background-color: var(--color-white);
-    padding: 50px;
+    padding:var(--unit-l);
     margin: auto;
-    border-radius: 10px;
-    position: relative;
-    
+    border-radius:var(--unit-xs);
+    position: relative; 
 }
 
 .title h4 {
@@ -331,19 +299,19 @@ h2 {
 
 .form-items .input {
     width: 100%;
-    margin-bottom: 12px;
-    padding: 15px 40px;
+    margin-bottom:var(--unit-s);
+    padding:var(--unit-s);
     box-sizing: border-box;
     background: var(--color-secondary3);
     border: 0;
     outline: none;
-    border-radius: 30px;
+    border-radius:var(--unit-m);
 }
 
 .form-items .input.message {
-    height: 125px;
+    height:var(--unit-xl);
     border-radius:var(--unit-s);
-    margin-bottom: 30px;
+    margin-bottom:var(--unit-m);
     padding:var(--unit-s);
     resize: none;
 }
@@ -352,8 +320,8 @@ h2 {
     background: var(--color-secondary1);
     text-align: center;
     color:var(--color-white);
-    padding: 12px;
-    border-radius: 25px;
+    padding:var(--unit-s);
+    border-radius:var(--unit-m);
     cursor: pointer;
 }
 
@@ -405,6 +373,94 @@ h2 {
 
 .footer .footer-icons a i {
     color: var(--color-black);
-    margin-top: 8px;
+    margin-top:var(--unit-xs);
 }
 
+@media screen and (max-width: 1000px) {
+    .image-gallery{
+        grid-template-areas: 
+                'img-1 img-1 img-2 img-2'
+                'img-1 img-1 img-3 img-3'
+                'img-4 img-4 img-3 img-3'
+                'img-5 img-5 img-6 img-6'
+                'img-7 img-7 img-6 img-6'
+                'img-7 img-7 img-8 img-8'
+                'img-9 img-9 img-10 img-10';
+    }
+    .image-gallery a {
+        height: 200px;
+    }
+
+    .img-1 {
+        min-height: 416px;
+    }
+
+    .img-3 {
+        min-height: 416px;
+    }
+
+    .img-5 {
+        min-height: 200px;
+    }
+
+    .img-6 {
+        min-height: 416px;
+    }
+
+    .img-7 {
+        min-height: 416px;
+    }
+
+    .img-8 {
+        min-height: 200px;
+    }
+
+    .wrapper {
+        font-size: smaller;
+     }
+
+
+@media screen and (max-width: 780px) {
+        .photo {
+            display: right;
+        
+        }
+        
+}
+
+
+@media screen and (max-width: 500px) {
+    .image-gallery{
+         grid-template-areas:
+            'img-1 img-1 img-1 img-1'
+            'img-2 img-2 img-2 img-2'
+            'img-3 img-3 img-3 img-3'
+            'img-4 img-4 img-4 img-4'
+            'img-5 img-5 img-5 img-5'
+            'img-6 img-6 img-6 img-6'
+            'img-7 img-7 img-7 img-7'
+            'img-8 img-8 img-8 img-8'
+            'img-9 img-9 img-9 img-9'
+            'img-10 img-10 img-10 img-10';
+    }
+    
+    .image-gallery a,
+    .img-1,
+    .img-3,
+    .img-6,
+    .img-7 {
+        min-height: 250px;
+        height: 250px;
+    }
+
+    .wrapper {
+       font-size: small;
+       min-height: 100%;
+       margin-left:var(--unit-xs);
+       margin-right:var(--unit-xs);
+    }
+
+    .photo {
+        height: 250px;
+    }
+}
